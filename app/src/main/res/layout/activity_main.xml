@@ -44,9 +44,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Udacity"
+                    android:text="@string/name"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoLink="all"/>
 
             </LinearLayout>
 
@@ -74,9 +75,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2465 Latham St \nMountain View, CA 94043"
+                    android:text="@string/place"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoLink="map"/>
 
             </LinearLayout>
 
@@ -103,7 +105,38 @@
                     android:layout_height="wrap_content"
                     android:text="650-555-5555"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoLink="phone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_public_white_36dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/web_page"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:autoLink="web"
+                    android:textColor="@android:color/black"
+                    />
 
             </LinearLayout>
 
@@ -118,7 +151,7 @@
         android:background="#2c3c49"
         android:fontFamily="@font/actor"
         android:padding="10dp"
-        android:text="The Path to Success"
+        android:text="@string/footer"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
